@@ -1,0 +1,60 @@
+.modal{
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.596);
+	z-index: 100;
+
+}
+
+@keyframes topToDown{
+	0% {
+		transform: translateY(-100px);
+	}
+
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+.mdata{
+	animation: topToDown 500ms ease-in-out;
+
+	background-color: #f05454;
+	width: fit-content;
+	padding: 50px 100px;
+	margin: 50px auto;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: -1px -2px 48px 30px rgba(240, 84, 84, 0.2);
+	border-radius: 20px;
+	z-index: 101;
+
+}
+
+.mdata img{
+	width: 200px;
+}
+
+.mdata h1{
+	background-color: white;
+	color: #f05454;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+
+.mdata p{
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width:700px) {
+	.mdata p{
+		font-size: 1rem;
+	}
+}
